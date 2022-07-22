@@ -12,7 +12,7 @@
 -   Gérer les évènements d'un site avec JavaScript
 
 ### Résultat du projet :
-Le lien [GitHub Pages](https://github.com/Chardema/Fisheye.github.io) vous permet de visualiser le résultat du travail effectué.
+Le lien [GitHub Pages](https://chardema.github.io/fisheye/) vous permet de visualiser le résultat du travail effectué.
 
 ## Installation
 
