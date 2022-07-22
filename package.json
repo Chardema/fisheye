@@ -1,0 +1,24 @@
+{
+  "name": "p6_hardeman_fisheye",
+  "version": "1.0.0",
+  "description": "Prototype du site FishEye",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./css/style.css --style compressed",
+    "dev": "serve -l 5500"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chardema/Fisheye.github.io"
+  },
+  "author": "Hardeman Christopher",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "serve": "^13.0.2"
+  }
+}
