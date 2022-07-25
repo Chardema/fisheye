@@ -57,13 +57,6 @@ export default class Photographer {
             <p class="photographer__infos__price">${this.price}€/jour</p>
         </div>`
 
-        let tagsList = document.createElement('ul')
-        tagsList.setAttribute('class', 'tag-list photographer__tags')
-
-
-
-        element.appendChild(tagsList)
-
         return element
     }
 
@@ -95,17 +88,6 @@ export default class Photographer {
         <p class="photographer__infos__city">${this.city}, ${this.country}</p>
         <p class="photographer__infos__tagline">${this.tagline}</p>`
 
-        let tagsList = document.createElement('ul')
-        tagsList.setAttribute('class', 'tag-list')
-        tagsList.setAttribute('aria-label', 'tags')
-
-        let tags = this.tags.map(tag => new Tag(tag))
-
-        tags.forEach(tag => {
-            tagsList.appendChild(tag.element)
-        })
-
-        infosElement.appendChild(tagsList)
 
         // Ajout du text dans le bouton de contact
 
