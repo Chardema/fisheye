@@ -1,5 +1,4 @@
 import CardInfos from "./CardInfos.js"
-import Tag from "./Tag.js"
 import LightBox from "./LightBox.js"
 
 export default class Media {
@@ -9,7 +8,6 @@ export default class Media {
         this.date = data.date
         this.likes = data.likes
         this.title = data.title
-        this.tags = data.tags
         this.img = data.image
         this.video = data.video
         this.price = data.price
@@ -57,17 +55,6 @@ export default class Media {
 
         Media.instances = element
         Media.fill()
-    }
-
-    /**
-     * Défini si chaque media et visible ou non selon le tag selectionné
-     */
-    static setVisbilityFromFilters = () => {
-
-        Media.instances.forEach(media => {
-            let res = media.tags.filter(tag => Tag.activeTags.includes(tag))
-            media.element.style.display = res.length == Tag.activeTags.length ? "block" : "none"
-        })
     }
 
     /**

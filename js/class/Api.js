@@ -43,27 +43,6 @@ export default class Api {
             return res || Error.print("Ce photographe n'existe pas", true)
         }
     }
-
-    /**
-     * Cette fonction récupère tout les tags de tout les photographes
-     * @returns {array}
-     */
-    static getAllTags = () => {
-        let allTags = []
-
-        Api.photographers.forEach(photographer => {
-            let tagsPhotographer = photographer.tags
-            
-            tagsPhotographer.forEach(tag => {
-                if (!allTags.includes(tag)) {
-                    allTags = [...allTags, tag]
-                }
-            })
-        })
-
-        return allTags
-    }
-
     /**
      * Cette fonction récupère tout les médias d'un photographe
      * @param {number} id 

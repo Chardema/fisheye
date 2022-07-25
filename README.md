@@ -18,7 +18,7 @@ Le lien [GitHub Pages](https://chardema.github.io/fisheye/) vous permet de visua
 
 Pour installer le projet sur votre machine, commencer par cloner le dépôt :
 
-    git clone https://github.com/Chardema/Fisheye.github.io
+    git clone https://github.com/Chardema/fisheye
 
 Une fois le dépôt cloné, installer les dépendances :
 

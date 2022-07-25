@@ -3,7 +3,6 @@
 // -----------------------------------------
 
 import Api from './class/Api.js'
-import Tag from './class/Tag.js'
 import Error from './class/Error.js'
 import Photographer from './class/Photographer.js'
 import SortDropDown from './class/SortDropDown.js'
@@ -52,13 +51,6 @@ try {
 } catch (error) {
     Error.print(error, true)
 }
-
-// Configuration du comportement des tags sur la pages
-
-Tag.config({
-    oneAtTime: true,
-    callback: () => { Media.setVisbilityFromFilters() }
-})
 
 // Photographe
 

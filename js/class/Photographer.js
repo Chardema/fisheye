@@ -1,5 +1,5 @@
 import FormContact from "./FormContact.js";
-import Tag from "./Tag.js";
+
 
 export default class Photographer {
     constructor(data) {
@@ -10,7 +10,6 @@ export default class Photographer {
         this.country = data.country
         this.tagline = data.tagline
         this.price = data.price
-        this.tags = data.tags
         Photographer.instances = [...Photographer.instances, this]
         
         this.element = this.getView()
@@ -55,18 +54,13 @@ export default class Photographer {
         </a>
         <div class="photographer__infos">
             <p class="photographer__infos__city">${this.city}, ${this.country}</p>
-            <p class="photographer__infos__tagline">${this.tagline}</p>
             <p class="photographer__infos__price">${this.price}€/jour</p>
         </div>`
 
         let tagsList = document.createElement('ul')
         tagsList.setAttribute('class', 'tag-list photographer__tags')
 
-        let tags = this.tags.map(tag => new Tag(tag))
 
-        tags.forEach(tag => {
-            tagsList.appendChild(tag.element)
-        })
 
         element.appendChild(tagsList)
 
